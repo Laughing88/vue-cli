@@ -15,4 +15,4 @@
 # npm i amfe-flexible --save 安装移动端适配插件
 # npm i jweixin-npm --save 安装微信接口sdk
 # 根目录创建webpack.config.js文件 配置：入口(entry)、输出(output)、加载器（loader）、插件(plugins)
-# 创建src>(assets>img+less)+(components>index.vue+login.vue+register.vue)+(js>public.js+request>api.js+http.js)+(store>store.js)+index.html+main.js目录(>下级目录，+同级目录)
+# 创建src>assets+components+js+store+index.html+main.js目录(根据个人习惯创建改变)
