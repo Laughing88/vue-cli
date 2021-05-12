@@ -13,6 +13,7 @@
 # npm i axios --save 安装axios接口请求
 # npm i qs --save 将URL解析成对象的形式插件
 # npm i amfe-flexible --save 安装移动端适配插件
+# npm i px2rem-loader --save 将px转换成rem（1px转化rem后有些手机上显示模糊或不显示，解决办法：将px大写，即1px写为1PX）
 # npm i jweixin-npm --save 安装微信接口sdk
 # 根目录创建webpack.config.js文件 配置：入口(entry)、输出(output)、加载器（loader）、插件(plugins)
 # 创建src>assets+components+js+store+index.html+main.js目录(根据个人习惯创建改变)

@@ -4,7 +4,7 @@ import Swiper from 'vue-awesome-swiper';
 import 'swiper/css/swiper.css';
 import './assets/less/reset.less';
 // 移动端适配
-import 'amfe-flexible/index.min.js';
+import 'amfe-flexible/index.js';
 // store必须小写，否则首字母大写访问会state:state
 import store from './store/store';
 import Index from './view/index';
@@ -37,5 +37,7 @@ const router = new Router({
 new Vue({
     el:"#app",
     router,
-    store
+    store,
+    components:{Index},
+    template: '<Index/>'
 })
