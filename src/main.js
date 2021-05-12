@@ -7,9 +7,9 @@ import './assets/less/reset.less';
 import 'amfe-flexible/index.min.js';
 // store必须小写，否则首字母大写访问会state:state
 import store from './store/store';
-import Index from './components/index';
-import Login from './components/login';
-import Register from './components/register';
+import Index from './view/index';
+import Login from './view/login';
+import Register from './view/register';
 
 Vue.config.productionTip = false;
 
