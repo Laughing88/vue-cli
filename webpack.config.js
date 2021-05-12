@@ -16,6 +16,18 @@ module.exports = {
     module: {
         rules: [
             {
+                test: /\.(png|jpg|gif|jpeg)$/,
+                use: [
+                  {
+                    loader: 'url-loader',
+                    options: {
+                      limit: 12000,
+                      name: 'img/[name].[hash:8].[ext]'
+                    }
+                  }
+                ]
+            },
+            {
                 test: /\.css$/,
                 use: [ 
                     'style-loader',
@@ -43,5 +55,5 @@ module.exports = {
             filename: 'index.html', // dist目录下生成的文件名
             template: './src/index.html'
         })
-    ]
+    ],
 }

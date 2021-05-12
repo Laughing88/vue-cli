@@ -12,9 +12,14 @@
   "license": "ISC",
   "dependencies": {
     "amfe-flexible": "^2.2.1",
+    "axios": "^0.21.1",
+    "jweixin-npm": "^1.6.1",
     "less": "^4.1.1",
     "less-loader": "^8.1.1",
+    "qs": "^6.10.1",
+    "swiper": "^5.4.5",
     "vue": "^2.6.12",
+    "vue-awesome-swiper": "^4.1.1",
     "vue-loader": "^15.9.6",
     "vue-router": "^3.5.1",
     "vue-template-compiler": "^2.6.12",
@@ -24,6 +29,7 @@
     "css-loader": "^5.2.4",
     "html-webpack-plugin": "^5.3.1",
     "style-loader": "^2.0.0",
+    "url-loader": "^4.1.1",
     "webpack": "^5.36.2",
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.2"
