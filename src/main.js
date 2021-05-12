@@ -3,6 +3,8 @@ import Router from 'vue-router';
 import Swiper from 'vue-awesome-swiper';
 import 'swiper/css/swiper.css';
 import './assets/less/reset.less';
+// 移动端适配
+import 'amfe-flexible/index.min.js';
 // store必须小写，否则首字母大写访问会state:state
 import store from './store/store';
 import Index from './components/index';
