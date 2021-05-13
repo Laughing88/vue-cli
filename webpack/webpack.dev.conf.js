@@ -10,7 +10,6 @@ module.exports = merge(base, {
    //模块参数
     mode: 'development',
     devServer: {
-        contentBase: './dist',
         host: '127.0.0.1',
         port: '8080',
         inline: true,
