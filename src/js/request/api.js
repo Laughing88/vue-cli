@@ -1,6 +1,15 @@
 import { get, post } from './http';
 
-let api = 'http://mall.fhzhny.com/api';
+let api = '';
+if(process.env.NODE_ENV !== 'production'){
+    api = 'http://mall.fhzhny.com/api'; //开发环境
+}else{
+    if(process.env.type == 'test'){
+        api = 'http://mall.fhzhny.com/api'; //测试环境
+    }else{
+        api = 'http://mall.fhzhny.com/api'; //生产环境
+    }
+}
 
 // 轮播
 export const banner = showIndex=>get(api+'/api/banner',showIndex);

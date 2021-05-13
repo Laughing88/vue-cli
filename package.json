@@ -4,27 +4,32 @@
   "description": "vue项目搭建模板",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack-dev-server --inline --hot --open --port 8080 --host 127.0.0.1",
-    "build": "webpack"
+    "test": "cross-env NODE_ENV=production webpack --config webpack/webpack.test.conf.js",
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --config webpack/webpack.dev.conf.js",
+    "build": "cross-env NODE_ENV=production webpack --config webpack/webpack.prod.conf.js"
   },
   "author": "Laughing_thg@163.com",
   "license": "ISC",
   "dependencies": {
     "amfe-flexible": "^2.2.1",
     "axios": "^0.21.1",
+    "cross-env": "^7.0.3",
     "jweixin-npm": "^1.6.1",
     "less": "^4.1.1",
     "less-loader": "^8.1.1",
+    "optimize-css-assets-webpack-plugin": "^5.0.4",
+    "protractor": "^7.0.0",
     "px2rem-loader": "^0.1.9",
     "qs": "^6.10.1",
     "swiper": "^5.4.5",
+    "uglifyjs-webpack-plugin": "^2.2.0",
     "vue": "^2.6.12",
     "vue-awesome-swiper": "^4.1.1",
     "vue-loader": "^15.9.6",
     "vue-router": "^3.5.1",
     "vue-template-compiler": "^2.6.12",
-    "vuex": "^3.6.2"
+    "vuex": "^3.6.2",
+    "webpack-merge": "^5.7.3"
   },
   "devDependencies": {
     "css-loader": "^5.2.4",

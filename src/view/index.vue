@@ -35,30 +35,30 @@ export default {
         carousel: [],
     }
   },
-    computed: {
-        ...mapState({
-        count: (state) => state.count,
-        }),
-    },
-    created(){
-        
-    },
-    mounted(){
-        let that = this;
-            that.banner();
-    },
-    methods:{
-        banner(){
-            let that = this;
-            banner({
-                showIndex:16
-            }).then(res=>{
-                that.carousel = res.data;
-            }).catch(error=>{
-                console.log(error);
-            })
-        },
-    }
+  computed: {
+      ...mapState({
+      count: (state) => state.count,
+      }),
+  },
+  created(){
+      
+  },
+  mounted(){
+      let that = this;
+          that.banner();
+  },
+  methods:{
+      banner(){
+          let that = this;
+          banner({
+              showIndex:16
+          }).then(res=>{
+              that.carousel = res.data;
+          }).catch(error=>{
+              console.log(error);
+          })
+      },
+  }
 };
 </script>
 

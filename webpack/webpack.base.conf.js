@@ -1,6 +1,6 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const VueLoaderPlugin=require('vue-loader/lib/plugin');
-
+const NODE_ENV = process.env.NODE_ENV;
 module.exports = {
     entry: './src/main.js',  //指定打包的入口文件
     output: {
