@@ -17,7 +17,7 @@ Vue.use(Router);
 Vue.use(Swiper);
 
 const router = new Router({
-    mode: '',//history || hash 两种模式根据项目需要，history需要后台结合
+    //mode: 'history',//history || hash 两种模式根据项目需要，history需要后台结合
     routes:[ 
         {
             path: '/',
@@ -37,7 +37,5 @@ const router = new Router({
 new Vue({
     el:"#app",
     router,
-    store,
-    components:{Index},
-    template: '<Index/>'
+    store
 })
