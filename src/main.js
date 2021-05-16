@@ -7,32 +7,14 @@ import './assets/less/reset.less';
 import 'amfe-flexible/index.js';
 // store必须小写，否则首字母大写访问会state:state
 import store from './store/store';
-import Index from './view/index';
-import Login from './view/login';
-import Register from './view/register';
+import router from './router/router';
 
 Vue.config.productionTip = false;
 
 Vue.use(Router);
 Vue.use(Swiper);
 
-const router = new Router({
-    //mode: 'history',//history || hash 两种模式根据项目需要，history需要后台结合
-    routes:[ 
-        {
-            path: '/',
-            component: Index
-        },
-        {
-            path:'/login', 
-            component:Login 
-        },
-        {
-            path:'/register',
-            component:Register
-        },
-    ]
-})
+
 
 new Vue({
     el:"#app",

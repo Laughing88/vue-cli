@@ -1,4 +1,4 @@
-# Laughing 快速搭建vue-cli2
+# Laughing 快速搭建vue-cli
 # npm init 配置package.json文件
 # npm i vue --save 安装Vue
 # npm i vue-router --save 安装路由 vue-router

@@ -11,8 +11,8 @@
             </ul>
         </header>
     </div>     
-    <swiper :options='swiperOptions' :auto-update="true" class="swiper">
-        <swiper-slide class="swiper-slide" v-for="(item,index) in carousel" :key="index">
+    <swiper :options='swiperOptions' :auto-update="true">
+        <swiper-slide v-for="(item,index) in carousel" :key="index">
             <img :src="item.icon" class="swiperImg"/>
         </swiper-slide>
         <div class="swiper-pagination"  slot="pagination"></div>
