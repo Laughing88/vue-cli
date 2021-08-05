@@ -22,6 +22,7 @@ module.exports = {
                     loader: 'url-loader',
                     options: {
                       limit: 12000,
+					  esModule: false,
                       name: 'img/[name].[hash:8].[ext]'
                     }
                   }

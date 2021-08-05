@@ -45,7 +45,20 @@ export default {
             delay: 1000,
           },
       },
-      carousel: [],
+      carousel: [
+		  {
+			  icon: require('../assets/img/banner01.png')
+		  },
+		  {
+			  icon: require('../assets/img/banner02.png')
+		  },
+		  {
+			  icon: require('../assets/img/banner03.png')
+		  },
+		  {
+			  icon: require('../assets/img/banner04.png')
+		  }
+	  ],
     }
   },
   computed: {
@@ -58,7 +71,7 @@ export default {
   },
   mounted(){
       let that = this;
-          that.banner();
+          // that.banner();
   },
   methods:{
       banner(){
