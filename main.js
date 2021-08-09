@@ -14,7 +14,9 @@ Vue.config.productionTip = false;
 Vue.use(Router);
 Vue.use(Swiper);
 
-
+if (module.hot) {
+  module.hot.accept();
+}
 
 new Vue({
     el:"#app",
