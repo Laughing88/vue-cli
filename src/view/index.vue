@@ -17,6 +17,7 @@
         </swiper-slide>
         <div class="swiper-pagination"  slot="pagination"></div>
     </swiper>
+    <Loading/>
   </div>
 </template>
 
@@ -26,9 +27,15 @@ import { mapState } from "vuex";
 import { banner } from '../js/request/api';
 import { shareLink } from '../js/public.js';
 import mineImg from '../assets/img/mine.png';
+import Loading from '../components/loading.vue';
+
 Vue.prototype.public = {shareLink};
+
 export default {
   name: "index",
+  components:{
+    Loading
+  },
   data() {
     return {
       mineImg: mineImg,
