@@ -27,7 +27,7 @@ import { mapState } from "vuex";
 import { banner } from '../js/request/api';
 import { shareLink } from '../js/public.js';
 import mineImg from '../assets/img/mine.png';
-import Loading from '../components/loading.vue';
+import Loading from '../components/loading';
 
 Vue.prototype.public = {shareLink};
 
@@ -53,19 +53,19 @@ export default {
           },
       },
       carousel: [
-		  {
-			  icon: require('../assets/img/banner01.png')
-		  },
-		  {
-			  icon: require('../assets/img/banner02.png')
-		  },
-		  {
-			  icon: require('../assets/img/banner03.png')
-		  },
-		  {
-			  icon: require('../assets/img/banner04.png')
-		  }
-	  ],
+        {
+          icon: require('../assets/img/banner01.png')
+        },
+        {
+          icon: require('../assets/img/banner02.png')
+        },
+        {
+          icon: require('../assets/img/banner03.png')
+        },
+        {
+          icon: require('../assets/img/banner04.png')
+        }
+      ],
     }
   },
   computed: {
